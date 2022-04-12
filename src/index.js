@@ -20,7 +20,7 @@ import history from "./history";
 const rootElement = document.getElementById("root");
 render(
     <HashRouter>
-        <Routes>
+       
             <Route path="/" element={<App />} />
             <Route path="/AddCandidate" element={<AddCandidate />} />
             <Route path="/StartPoll" element={<StartPoll />} />
@@ -28,7 +28,7 @@ render(
             <Route path="/AddVoter" element={<AddVoter />} />
             <Route path="/Vote" element={<Vote />} />
             
-        </Routes>
+   
     </HashRouter>,
     rootElement);
 // ReactDOM.render(

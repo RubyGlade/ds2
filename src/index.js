@@ -10,7 +10,7 @@ import Result from './Result';
 import AddVoter from './AddVoter';
 import Vote from './Vote';
 import {
-    BrowserRouter,
+    HashRouter,
     Routes,
     Route
   } from "react-router-dom";
@@ -19,7 +19,7 @@ import history from "./history";
 
 const rootElement = document.getElementById("root");
 render(
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/AddCandidate" element={<AddCandidate />} />
@@ -29,7 +29,7 @@ render(
             <Route path="/Vote" element={<Vote />} />
             
         </Routes>
-    </BrowserRouter>,
+    </HashRouter>,
     rootElement);
 // ReactDOM.render(
 //   <Routes>
